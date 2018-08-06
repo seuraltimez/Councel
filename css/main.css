@@ -1,0 +1,266 @@
+*, *:befoe, *:after {
+	-box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+h1{
+	text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a;
+	text-transform: uppercase;
+}
+.menu {
+	margin-top: 10px;
+}
+.navbar-nav a {
+    line-height: 1;
+    display: inline-block;
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #000;
+    transition: width .3s ease-in-out;
+}
+.navbar-nav a:hover:after,
+.navbar-nav a:focus:after {
+    width: 100%;
+}
+.menu {
+	height: 100%;
+	width: 100%;
+	border-bottom: 1px solid #ED8D8D;
+}
+.menu-link {
+	color: #fff;
+	text-decoration: none;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   text-transform: uppercase;
+}
+.navbar-nav {
+	margin-left: 45%;
+}
+.navbar-nav li{
+	color: #929293;
+	font-size: 20px;
+  	font-weight: 500; 
+}
+iframe {
+	width: 420px;
+	height: 300px;
+}
+.section-services{
+	border-top: 1px solid #ED8D8D;
+	margin-top: 8%;
+}
+.servicse-text {
+	margin-bottom: 5%;
+}
+.section-second{
+	border-top: 1px solid #ED8D8D;
+}
+.text-center{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.card {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    min-height:400px;
+    background:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+}
+.card:hover {
+    box-shadow:0 30px 70px rgba(0,0,0,.2);
+}
+.card .box {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    width:100%;
+}
+.card .box .img {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+.card .box .img img {
+    width:100%;
+    height:100%;
+}
+.card .box h2 {
+    font-size:20px;
+    color:#262626;
+    margin:20px auto;
+}
+.card .box h2 span {
+    font-size:14px;
+    background:#e91e63;
+    color:#fff;
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:15px;
+}
+.card .box p {
+    color:#262626;
+}
+.card .box span {
+    display:inline-flex;
+}
+.card .box ul {
+    margin:0;
+    padding:0;
+}
+.card .box ul li {
+    list-style:none;
+    float:left;
+}
+.card .box ul li a {
+    display:block;
+    color:#aaa;
+    margin:0 10px;
+    font-size:20px;
+    transition:0.5s;
+    text-align:center;
+}
+.card .box ul li:hover a {
+    color:#e91e63;
+    transform:rotateY(360deg);
+}
+
+/* О нас / About Us */
+.section-third{
+	border-top: 1px solid #ED8D8D;
+}
+.circle {
+	padding: 13px 20px;
+	border-radius: 50%;
+	background-color: #ED8D8D;
+	color: #fff;
+	max-height: 50px;
+	z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+	align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+	content: "";
+	position: absolute;
+	border-left: 3px solid #ED8D8D;
+	z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+	height: 50%;
+	left: 50%;
+	top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+	height: 100%;
+	left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+	height: 50%;
+	left: 50%;
+	top: 0;
+}
+.timeline div {
+	padding: 0;
+	height: 40px;
+}
+.timeline hr {
+	border-top: 3px solid #ED8D8D;
+	margin: 0;
+	top: 17px;
+	position: relative;
+}
+.timeline .col-2 {
+	display: flex;
+	overflow: hidden;
+}
+.timeline .corner {
+	border: 3px solid #ED8D8D;
+	width: 100%;
+	position: relative;
+	border-radius: 15px;
+}
+.timeline .top-right {
+	left: 50%;
+	top: -50%;
+}
+.timeline .left-bottom {
+	left: -50%;
+	top: calc(50% - 3px);
+}
+.timeline .top-left {
+	left: -50%;
+	top: -50%;
+}
+.timeline .right-bottom {
+	left: 50%;
+	top: calc(50% - 3px);
+}
+
+/* Обратная связь */
+.section-fourth{
+	border-top: 1px solid #ED8D8D;
+}
+.section-fourth .form-control{
+    border-radius: 10px;
+}
+.section-fourth button{
+    border-radius: 10px;
+}
+.section-fourth .row{
+    margin-bottom:30px;
+}
+@media (max-width: 768px) { 
+    .section-fourth iframe {
+        margin-bottom: 15px;
+    }
+    
+}
+footer{
+   	background-color: #ED8D8D;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}
